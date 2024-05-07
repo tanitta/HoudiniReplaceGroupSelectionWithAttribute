@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menuDocument>
+  <menu>
+    <subMenu id="replace_group_selection_with_attribute">
+    <label>Replace Group Selection With Attribute</label>
+        <scriptItem id="replace_group_selection_with_attribute_point">
+            <label>Replace Selected Points With Attribute</label>
+            <scriptPath>$HOUDINI_REPLACE_GROUP_SELECTION_WITH_ATTRIBUTE/scripts/replace.py</scriptPath>
+            <scriptArgs>point</scriptArgs>
+        </scriptItem>
+
+        <scriptItem id="replace_group_selection_with_attribute_vertex">
+            <label>Replace Selected Vertices With Attribute</label>
+            <scriptPath>$HOUDINI_REPLACE_GROUP_SELECTION_WITH_ATTRIBUTE/scripts/replace.py</scriptPath>
+            <scriptArgs>vertex</scriptArgs>
+        </scriptItem>
+
+        <scriptItem id="replace_group_selection_with_attribute_prim">
+            <label>Replace Selected Primitives With Attribute</label>
+            <scriptPath>$HOUDINI_REPLACE_GROUP_SELECTION_WITH_ATTRIBUTE/scripts/replace.py</scriptPath>
+            <scriptArgs>primitive</scriptArgs>
+        </scriptItem>
+    </subMenu>
+  </menu>
+</menuDocument>

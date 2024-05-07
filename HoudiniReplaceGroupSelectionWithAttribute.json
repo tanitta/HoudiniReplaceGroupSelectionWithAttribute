@@ -1,0 +1,8 @@
+{
+	"path": "$HOUDINI_REPLACE_GROUP_SELECTION_WITH_ATTRIBUTE",
+    "env": [
+        {
+            "HOUDINI_REPLACE_GROUP_SELECTION_WITH_ATTRIBUTE": "$HOUDINI_PACKAGE_PATH/HoudiniReplaceGroupSelectionWithAttribute"
+        }
+    ]
+}
