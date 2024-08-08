@@ -1,24 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <menuDocument>
   <menu>
-    <subMenu id="replace_group_selection_with_attribute">
-    <label>Replace Group Selection With Attribute</label>
+    <subMenu id="replace_group_selection">
+    <label>Replace Group Selection</label>
         <scriptItem id="replace_group_selection_with_attribute_point">
-            <label>Replace Selected Points With Attribute</label>
+        
+            <label>Point Index -&gt; Attribute Value</label>
             <scriptPath>$HOUDINI_REPLACE_GROUP_SELECTION_WITH_ATTRIBUTE/scripts/replace.py</scriptPath>
-            <scriptArgs>point</scriptArgs>
+            <scriptArgs>point attr</scriptArgs>
         </scriptItem>
 
         <scriptItem id="replace_group_selection_with_attribute_vertex">
-            <label>Replace Selected Vertices With Attribute</label>
+            <label>Vertex Index -&gt; Attribute Value</label>
             <scriptPath>$HOUDINI_REPLACE_GROUP_SELECTION_WITH_ATTRIBUTE/scripts/replace.py</scriptPath>
-            <scriptArgs>vertex</scriptArgs>
+            <scriptArgs>vertex attr</scriptArgs>
         </scriptItem>
 
         <scriptItem id="replace_group_selection_with_attribute_prim">
-            <label>Replace Selected Primitives With Attribute</label>
+            <label>Primitive Index -&gt; Attribute Value</label>
             <scriptPath>$HOUDINI_REPLACE_GROUP_SELECTION_WITH_ATTRIBUTE/scripts/replace.py</scriptPath>
-            <scriptArgs>primitive</scriptArgs>
+            <scriptArgs>primitive attr</scriptArgs>
+        </scriptItem>
+
+        <separatorItem/>
+
+        <scriptItem id="replace_attribute_group_selection_with_point_index">
+            <label>Attribute Value -&gt; Point Index</label>
+            <scriptPath>$HOUDINI_REPLACE_GROUP_SELECTION_WITH_ATTRIBUTE/scripts/replace.py</scriptPath>
+            <scriptArgs>point index</scriptArgs>
+        </scriptItem>
+
+        <scriptItem id="replace_attribute_group_selection_with_vertex_index">
+            <label>Attribute Value -&gt; Vertex Index</label>
+            <scriptPath>$HOUDINI_REPLACE_GROUP_SELECTION_WITH_ATTRIBUTE/scripts/replace.py</scriptPath>
+            <scriptArgs>vertex index</scriptArgs>
+        </scriptItem>
+
+        <scriptItem id="replace_attribute_group_selection_with_prim_index">
+            <label>Attribute Value -&gt; Primitive Index</label>
+            <scriptPath>$HOUDINI_REPLACE_GROUP_SELECTION_WITH_ATTRIBUTE/scripts/replace.py</scriptPath>
+            <scriptArgs>primitive index</scriptArgs>
         </scriptItem>
     </subMenu>
   </menu>
