@@ -24,11 +24,9 @@ def replace():
         return
 
     referenced_input_index = int(values[0])
+    geo = node.inputGeometry(referenced_input_index)
 
-    referenced_input_node = node.inputs()[referenced_input_index]
-    geo = referenced_input_node.geometry()
-
-    if button_idx == -1 or referenced_input_node is None:
+    if button_idx == -1 or geo is None:
         geo = node.geometry()
 
     elems = []
@@ -45,7 +43,7 @@ def replace():
             values.add(elem.attribValue(attrName))
         parm_lines = []
         for value in values:
-            line = "@{}={}".format(attrName, value)
+            line = '@{}="{}"'.format(attrName, value)
             parm_lines.append(line)
         parm.set('\n'.join(parm_lines))
     else:
